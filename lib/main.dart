@@ -27,7 +27,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("My Shopping List"),centerTitle: true, actions: const[
-         Icon(Icons.shopping_cart_sharp)
+         Padding(
+           padding: EdgeInsets.only(right: 5),
+           child: Icon(Icons.shopping_cart_sharp),
+         )
       ],),
       body: const Column(
         children: [
